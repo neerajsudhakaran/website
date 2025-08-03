@@ -35,7 +35,7 @@ This repository sets up and manages a static website hosted on **AWS S3** using 
 
 ## 🌍 Website URL
 
-After deployment, access your site at:
+After deployment, access the site at:
 
 https://s3.ap-southeast-2.amazonaws.com/neerajs.info/index.html
 
