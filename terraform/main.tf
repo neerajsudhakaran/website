@@ -52,6 +52,6 @@ resource "aws_dynamodb_table" "terraform_lock" {
   }
 
   tags = {
-    Name = "TerraformLockTable"
+    Name = "TerraformLockTableNew"
   }
 }
