@@ -57,6 +57,7 @@ cd terraform
 terraform init
 terraform plan
 terraform apply
+---
 
 📌 Additional Steps: Set Up the Secure Static Website
 1. Create Domain in Route 53
