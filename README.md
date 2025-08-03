@@ -55,3 +55,6 @@ cd terraform
 terraform init
 terraform plan
 terraform apply
+
+<img width="1221" height="471" alt="image" src="https://github.com/user-attachments/assets/f6873e75-498a-40ff-9789-9a5e86c23982" />
+
