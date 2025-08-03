@@ -4,26 +4,6 @@
 
 This repository sets up and manages a static website hosted on **AWS S3** using **Terraform** for infrastructure provisioning and **GitHub Actions** for automation.
 
----
-
-## 📁 Directory Structure
-
-.
-├── .github/
-│   └── workflows/
-│       ├── deploy.yml        # Workflow to sync website content (public_html) to S3
-│       └── terraform.yml     # Workflow to provision infrastructure using Terraform
-│
-├── public_html/
-│   └── index.html            # Website content (can add more HTML/CSS/JS files)
-│
-├── terraform/
-│   ├── backend.tf            # Terraform backend config (S3 + DynamoDB)
-│   ├── main.tf               # Main infrastructure resources
-│   ├── outputs.tf            # Output values
-│   └── variables.tf          # Variable definitions
-│
-└── README.md
 
 ## 🚀 Features
 
