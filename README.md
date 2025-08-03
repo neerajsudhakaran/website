@@ -41,13 +41,18 @@ After deployment, access the site at:
 
 https://s3.ap-southeast-2.amazonaws.com/neerajs.info/index.html
 
+## 🖼️ Screenshot
+
+Here's what the deployed site looks like:
+
+![Live site screenshot](.github/workflows/Output.png)
+
 ## 🔐 Secrets Required (in GitHub repo settings)
 
 Set the following GitHub Secrets:
 
 - `AWS_ACCESS_KEY_ID`
 - `AWS_SECRET_ACCESS_KEY`
-
 ---
 
 ## 🧪 Manual Usage (Local)
@@ -85,4 +90,6 @@ terraform apply
 
     Create an A (alias) record pointing to the CloudFront distribution
     Set a low TTL for quicker DNS propagation
+
+
 
