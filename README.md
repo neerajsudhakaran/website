@@ -13,6 +13,8 @@ This repository sets up and manages a static website hosted on **AWS S3** using 
 - CI/CD pipeline using GitHub Actions:
   - `terraform.yml` provisions infrastructure
   - `deploy.yml` syncs website content to S3
+- Optional: Delivered via **CloudFront** for low latency and global distribution
+            Domain and DNS managed via **Route 53
 
 ---
 
@@ -55,4 +57,31 @@ cd terraform
 terraform init
 terraform plan
 terraform apply
+
+📌 Additional Steps: Set Up the Secure Static Website
+1. Create Domain in Route 53
+
+    Register or import the domain
+    Ensure a hosted zone is created automatically or manually
+
+2. Request ACM Certificate (here in ap-southeast-2)
+
+    Use DNS validation
+    Add validation records via Route 53
+    Wait until the certificate is issued
+
+3. Create S3 Bucket (name should match domain name)
+    Store static site files (e.g., HTML, CSS, JS)
+    Keep bucket private — content will be served via CloudFront
+
+4. Create CloudFront Distribution
+
+    Set the S3 bucket as the origin
+    Attach the ACM certificate for HTTPS
+    Add the custom domain (neerajs.info) as an alias
+
+5. Map the Domain (Route 53 Record)
+
+    Create an A (alias) record pointing to the CloudFront distribution
+    Set a low TTL for quicker DNS propagation
 
