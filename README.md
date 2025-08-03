@@ -1,6 +1,6 @@
-# website  - https://neerajs.info
+# Website  - https://neerajs.info
 
-# 🌐 neerajs.info – Static Website on AWS with Terraform & GitHub Actions
+# Static Website on AWS with Terraform & GitHub Actions
 
 This repository sets up and manages a static website hosted on **AWS S3** using **Terraform** for infrastructure provisioning and **GitHub Actions** for automation.
 
